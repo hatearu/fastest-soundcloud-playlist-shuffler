@@ -51,7 +51,7 @@
     // Main function to shuffle the playlist and queue tracks
     async function shufflePlaylist() {
         if (!isPlaylistPage()) {
-            console.log('Not a playlist page. Exiting...');
+            console.log('Not a playlist page.');
             return;
         }
 
@@ -76,7 +76,7 @@
             await delay(2000);
         }
 
-        console.log('All tracks have been queued in shuffle order.');
+        console.log('All tracks have been shuffled.');
     }
 
     // Function to monitor clicks on the shuffle button
@@ -85,7 +85,7 @@
 
         if (shuffleButton) {
             shuffleButton.addEventListener('click', function() {
-                console.log('Shuffle button clicked! Triggering shuffle...');
+                console.log('Shuffling...');
                 shufflePlaylist();
             });
         } else {
